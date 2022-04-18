@@ -1,0 +1,28 @@
+.footerContainer {
+  margin-top: 5rem;
+  margin-bottom: 0;
+  background-color: rgb(25, 25, 25);
+  color: white;
+  display: flex;
+  flex-direction: column;
+
+  padding: 1rem;
+  padding-top: 4rem;
+}
+
+.footerContainer h1 {
+  text-align: center;
+}
+
+.footerItemsContainer {
+  margin-top: 5rem;
+  margin-bottom: 0;
+  background-color: rgb(25, 25, 25);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footerHeader {
+  margin-bottom: 2rem;
+}

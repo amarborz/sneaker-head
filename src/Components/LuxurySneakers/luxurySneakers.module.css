@@ -1,0 +1,25 @@
+.sectionHeader {
+  text-align: center;
+  margin-top: 10rem;
+  margin-bottom: 4rem;
+  font-weight: 600;
+}
+
+.brandsContainer {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  animation: move 5s infinite;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(1000px);
+  }
+}
