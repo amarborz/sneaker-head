@@ -11,15 +11,19 @@
   display: flex;
   justify-content: center;
   gap: 1rem;
-  animation: move 5s infinite;
+  animation: move 10s infinite;
 }
 
 @keyframes move {
-  from {
-    transform: translateX(0);
+  0% {
+    transform: translateX(0%);
   }
 
-  to {
-    transform: translateX(1000px);
+  50% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(50%);
   }
 }

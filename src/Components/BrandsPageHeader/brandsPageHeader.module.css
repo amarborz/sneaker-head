@@ -1,0 +1,38 @@
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+
+.imageBrand {
+  height: 30vh;
+  width: 80vw;
+  object-fit: cover;
+  background-color: rgb(175, 175, 175);
+}
+
+.imageHeader {
+  font-size: 3rem;
+  font-weight: 1000;
+  color: white;
+  position: absolute;
+  left: 20vw;
+  bottom: 1rem;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-weight: 900;
+}
+
+.sectionText {
+  text-align: center;
+  width: 40vw;
+  margin: auto;
+  line-height: 2rem;
+  font-weight: 500;
+  word-spacing: 5px;
+}

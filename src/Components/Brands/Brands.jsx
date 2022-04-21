@@ -7,6 +7,7 @@ import styles from './brands.module.css'
 // Data
 import { brands } from '../../Utils/Data/brandInfo'
 import { logos } from '../../Utils/Data/logoInfo'
+import { Link } from 'react-router-dom'
 
 const Brands = () => {
 	const [activeBrand, setActiveBrand] = useState(brands[0])
@@ -18,24 +19,26 @@ const Brands = () => {
 
 	return (
 		<>
-			<div className={styles.container}>
-				<div className={styles.leftContainer}>
-					<h2>{activeBrand.name}</h2>
-					<p>{activeBrand.desc}</p>
-					<p>discover the collection</p>
+			<Link to={`/brands/${activeBrand.name}`} className={styles.link}>
+				<div className={styles.container}>
+					<div className={styles.leftContainer}>
+						<h2>{activeBrand.name}</h2>
+						<p>{activeBrand.desc}</p>
+						<p>discover the collection</p>
+					</div>
+					<div className={styles.imageContainer}>
+						<img
+							src={activeBrand.image}
+							className={styles.image}
+							alt={activeBrand.name}
+						/>
+					</div>
+					<div className={styles.rightContainer}>
+						<h2>{activeBrand.name}</h2>
+						<p>{activeBrand.desc}</p>
+					</div>
 				</div>
-				<div className={styles.imageContainer}>
-					<img
-						src={activeBrand.image}
-						className={styles.image}
-						alt={activeBrand.name}
-					/>
-				</div>
-				<div className={styles.rightContainer}>
-					<h2>{activeBrand.name}</h2>
-					<p>{activeBrand.desc}</p>
-				</div>
-			</div>
+			</Link>
 
 			<div className={styles.logoContainer}>
 				{logos.map((logo) => {
