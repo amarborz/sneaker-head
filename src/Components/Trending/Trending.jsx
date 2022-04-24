@@ -1,7 +1,7 @@
 import styles from './trending.module.css'
 
-import nikeImage from '../../Utils/Images/HomePage/nikeSection.jpg'
-import accessoriesImage from '../../Utils/Images/HomePage/accessories.jpg'
+import nikeImage from '../../utils/images/homePage/nikeSection.jpg'
+import accessoriesImage from '../../utils/images/homePage/accessories.jpg'
 
 const Trending = () => {
 	return (

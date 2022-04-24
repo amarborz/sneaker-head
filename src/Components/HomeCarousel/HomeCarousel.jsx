@@ -2,12 +2,13 @@
 import { Carousel } from 'react-bootstrap'
 
 // Images
-import nikeImage from '../../Utils/Images/HomePage/nikeHomePage.png'
-import newBalanceImage from '../../Utils/Images/HomePage/newBalanceHomePagee.png'
-import jordanImage from '../../Utils/Images/HomePage/nikeHomePagee.png'
+import nikeImage from '../../utils/images/homePage/nikeHomePage.png'
+import newBalanceImage from '../../utils/images/homePage/newBalanceHomePagee.png'
+import jordanImage from '../../utils/images/homePage/nikeHomePagee.png'
 
 // Styles
 import styles from './homeCarousel.module.css'
+import { FaFireAlt } from 'react-icons/fa'
 
 const carouselData = [
 	{ name: 'Nike Air', desc: '', image: nikeImage },
@@ -18,7 +19,7 @@ const carouselData = [
 const HomeCarousel = () => {
 	return (
 		<div className={styles.homePageBackground}>
-			<Carousel>
+			<Carousel variant="dark">
 				{carouselData.map((data) => {
 					return (
 						<Carousel.Item key={data.name}>
@@ -30,12 +31,15 @@ const HomeCarousel = () => {
 							<br />
 							<Carousel.Caption>
 								<h5>{data.name}</h5>
-								<p>{data.desc}</p>
 							</Carousel.Caption>
 						</Carousel.Item>
 					)
 				})}
 			</Carousel>
+			<h4 className={styles.overlay}>
+				<FaFireAlt />
+				POPULAR
+			</h4>
 		</div>
 	)
 }

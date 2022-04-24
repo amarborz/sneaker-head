@@ -7,11 +7,15 @@
 
 .brandsContainer {
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   justify-content: center;
   gap: 1rem;
-  animation: move 10s infinite;
+  animation: move 20s infinite;
+}
+
+.brandItem {
+  cursor: pointer;
 }
 
 @keyframes move {
@@ -19,11 +23,15 @@
     transform: translateX(0%);
   }
 
-  50% {
+  33% {
     transform: translateX(-50%);
   }
 
-  100% {
+  66% {
     transform: translateX(50%);
+  }
+
+  100% {
+    transform: translateX(0%);
   }
 }

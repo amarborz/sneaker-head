@@ -1,8 +1,9 @@
-import Brands from '../../Components/Brands/Brands'
-import HomeCarousel from '../../Components/Carousel/HomeCarousel'
-import Footer from '../../Components/Footer/Footer'
-import LuxurySneakers from '../../Components/LuxurySneakers/LuxurySneakers'
-import Trending from '../../Components/Trending/Trending'
+import {
+	Brands,
+	HomeCarousel,
+	LuxurySneakers,
+	Trending,
+} from '../../components'
 
 const HomePage = () => {
 	return (
@@ -11,7 +12,6 @@ const HomePage = () => {
 			<Brands />
 			<Trending />
 			<LuxurySneakers />
-			<Footer />
 		</div>
 	)
 }

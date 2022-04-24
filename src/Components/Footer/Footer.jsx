@@ -1,4 +1,6 @@
+import ContactIcons from '../ContactIcons/ContactIcons'
 import styles from './footer.module.css'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
 	return (
@@ -24,11 +26,13 @@ const Footer = () => {
 				</div>
 				<div>
 					<h4 className={styles.footerHeader}>Company</h4>
-					<p>About Us</p>
-					<p>Contact Us</p>
-					<p>Instagram</p>
-					<p>Facebook</p>
-					<p>Twitter</p>
+					<Link to="/about">
+						<p>About Us</p>
+					</Link>
+					<Link to="/contact">
+						<p>Contact Us</p>
+					</Link>
+					<ContactIcons color="white" />
 				</div>
 			</div>
 		</div>

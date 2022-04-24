@@ -1,13 +1,13 @@
-import adidas from '../Images/Logos/adidasLogo.jpg'
-import nike from '../Images/Logos/nikeLogo.jpg'
-import asics from '../Images/Logos/asicsLogo.jpg'
-import converse from '../Images/Logos/converseLogo.jpg'
-import fila from '../Images/Logos/filaLogo.jpg'
-import newBalance from '../Images/Logos/newBalanceLogo.jpg'
-import puma from '../Images/Logos/pumaLogo.jpg'
-import reebok from '../Images/Logos/reebokLogo.jpg'
-import timberland from '../Images/Logos/timberlandLogo.jpg'
-import vans from '../Images/Logos/vansLogo.jpg'
+import adidas from '../images/logos/adidasLogo.jpg'
+import nike from '../images/logos/nikeLogo.jpg'
+import asics from '../images/logos/asicsLogo.jpg'
+import converse from '../images/logos/converseLogo.jpg'
+import fila from '../images/logos/filaLogo.jpg'
+import newBalance from '../images/logos/newBalanceLogo.jpg'
+import puma from '../images/logos/pumaLogo.jpg'
+import reebok from '../images/logos/reebokLogo.jpg'
+import timberland from '../images/logos/timberlandLogo.jpg'
+import vans from '../images/logos/vansLogo.jpg'
 
 export const logos = [
 	{

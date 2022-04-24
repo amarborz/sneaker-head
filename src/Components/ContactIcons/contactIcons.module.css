@@ -1,0 +1,45 @@
+.iconWhite {
+  color: white;
+}
+
+.iconBlack {
+  color: black;
+}
+
+.iconBlack,
+.iconWhite {
+  animation: rotateBack 1s;
+}
+
+.iconsContainer {
+  display: flex;
+  /* justify-content: center; */
+  gap: 1rem;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.iconWhite:hover,
+.iconBlack:hover {
+  animation: rotate 1s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0%);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotateBack {
+  0% {
+    transform: rotate(0%);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

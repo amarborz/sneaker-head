@@ -3,10 +3,11 @@ import { useState } from 'react'
 
 // Styles
 import styles from './brands.module.css'
+import { FaArrowRight } from 'react-icons/fa'
 
 // Data
-import { brands } from '../../Utils/Data/brandInfo'
-import { logos } from '../../Utils/Data/logoInfo'
+import { brands } from '../../utils/data/brandInfo'
+import { logos } from '../../utils/data/logoInfo'
 import { Link } from 'react-router-dom'
 
 const Brands = () => {
@@ -19,12 +20,14 @@ const Brands = () => {
 
 	return (
 		<>
-			<Link to={`/brands/${activeBrand.name}`} className={styles.link}>
+			<Link to={`/brands/${activeBrand.id}`} className={styles.link}>
 				<div className={styles.container}>
 					<div className={styles.leftContainer}>
 						<h2>{activeBrand.name}</h2>
 						<p>{activeBrand.desc}</p>
-						<p>discover the collection</p>
+						<p>
+							Discover the collection <FaArrowRight />
+						</p>
 					</div>
 					<div className={styles.imageContainer}>
 						<img
