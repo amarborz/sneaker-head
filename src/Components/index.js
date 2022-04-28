@@ -6,8 +6,9 @@ import Footer from './Footer/Footer'
 import FooterEmail from './FooterEmail/FooterEmail'
 import FooterInfo from './FooterInfo/FooterInfo'
 import HomeCarousel from './HomeCarousel/HomeCarousel'
+import Loader from './Loader/Loader'
 import LuxurySneakers from './LuxurySneakers/LuxurySneakers'
-import NavBar from './NavBar/NavBar'
+import Navbar from './Navbar/Navbar'
 import ProductPageImage from './ProductPageImage/ProductPageImage'
 import ProductPageText from './ProductPageText/ProductPageText'
 import Products from './Products/Products'
@@ -21,11 +22,12 @@ export {
 	FooterInfo,
 	HomeCarousel,
 	LuxurySneakers,
-	NavBar,
+	Navbar,
 	ProductPageImage,
 	ProductPageText,
 	Products,
 	Trending,
 	ContactForm,
 	ContactInfo,
+	Loader,
 }

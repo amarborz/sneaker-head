@@ -9,12 +9,12 @@ import {
 import { Route, Routes } from 'react-router-dom'
 
 // Layout
-import { NavBar, FooterInfo, FooterEmail, Footer } from './components'
+import { Navbar, FooterInfo, FooterEmail, Footer } from './components'
 
 function App() {
 	return (
 		<div>
-			<NavBar />
+			<Navbar />
 			<Routes>
 				<Route path="/" element={<HomePage />} />
 				<Route path="brands/:brandName" element={<BrandPage />} />

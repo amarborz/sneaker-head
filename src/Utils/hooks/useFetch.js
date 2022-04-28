@@ -9,12 +9,14 @@ const useFetch = (urlEndpoint) => {
 				`https://sneaker-head-7f57e-default-rtdb.europe-west1.firebasedatabase.app/${urlEndpoint}.json`,
 			)
 			const responseData = await response.json()
-			console.log(responseData)
+
 			setData(responseData)
 		}
 
 		fetchProduct()
 	}, [urlEndpoint])
+
+	console.log(data)
 
 	return data
 }

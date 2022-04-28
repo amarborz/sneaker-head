@@ -1,14 +1,25 @@
 import { useNavigate } from 'react-router-dom'
 import styles from './products.module.css'
 
-// import { brandPageProduct } from '../../Utils/Data/brandPageProducts'
-
 const Products = ({ products, shoeBrand }) => {
-	const newProducts = Object.values(products)
+	let newProducts
 	const navigate = useNavigate()
+
+	if (products) {
+		newProducts = Object.values(products)
+	}
 
 	const productPageHandler = (id) => {
 		navigate('/product/' + id)
+	}
+
+	if (!products) {
+		return (
+			<>
+				<h3 className={styles.productHeader}>{shoeBrand}</h3>
+				<h5 className={styles.header}>NO PRODUCTS AVAILABLE CURRENTLY</h5>
+			</>
+		)
 	}
 
 	return (

@@ -34,3 +34,9 @@
   margin-top: 5rem;
   font-weight: 700;
 }
+
+.header {
+  display: flex;
+  place-content: center;
+  margin-top: 10vh;
+}

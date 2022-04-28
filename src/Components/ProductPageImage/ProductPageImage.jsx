@@ -1,10 +1,10 @@
-// import styles from './productPageImage.module.css'
+import styles from './productPageImage.module.css'
 
 import { Carousel, CarouselItem } from 'react-bootstrap'
 
 const ProductPageImage = ({ images, name }) => {
 	return (
-		<div>
+		<div className={styles.imageContainer}>
 			<Carousel slide={false} variant="dark">
 				{images.map((image) => {
 					return (

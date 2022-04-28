@@ -2,5 +2,12 @@
   display: flex;
   justify-content: center;
   gap: 3rem;
+  flex-wrap: wrap;
   margin-top: 5rem;
+}
+
+.header {
+  display: flex;
+  place-content: center;
+  margin-top: 30vh;
 }

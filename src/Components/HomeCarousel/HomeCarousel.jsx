@@ -4,7 +4,7 @@ import { Carousel } from 'react-bootstrap'
 // Images
 import nikeImage from '../../utils/images/homePage/nikeHomePage.png'
 import newBalanceImage from '../../utils/images/homePage/newBalanceHomePagee.png'
-import jordanImage from '../../utils/images/homePage/nikeHomePagee.png'
+import jordanImage from '../../utils/images/homePage/airJordan1.png'
 
 // Styles
 import styles from './homeCarousel.module.css'
@@ -13,7 +13,7 @@ import { FaFireAlt } from 'react-icons/fa'
 const carouselData = [
 	{ name: 'Nike Air', desc: '', image: nikeImage },
 	{ name: 'New Balance 574', desc: '', image: newBalanceImage },
-	{ name: 'Nike AirMax', desc: '', image: jordanImage },
+	{ name: 'Nike Air Max', desc: '', image: jordanImage },
 ]
 
 const HomeCarousel = () => {
@@ -37,8 +37,8 @@ const HomeCarousel = () => {
 				})}
 			</Carousel>
 			<h4 className={styles.overlay}>
-				<FaFireAlt />
 				POPULAR
+				<FaFireAlt />
 			</h4>
 		</div>
 	)

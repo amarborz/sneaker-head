@@ -36,3 +36,15 @@
   font-weight: 500;
   word-spacing: 5px;
 }
+
+@media screen and (max-width: 992px) {
+  .imageBrand {
+    width: 100vw;
+  }
+
+  .sectionText {
+
+    width: 70vw;
+
+  }
+}
