@@ -9,11 +9,12 @@ import {
 import { Route, Routes } from 'react-router-dom'
 
 // Layout
-import { Navbar, FooterInfo, FooterEmail, Footer } from './components'
+import { Navbar, FooterInfo, FooterEmail, Footer, Logo } from './components'
 
 function App() {
 	return (
 		<div>
+			<Logo />
 			<Navbar />
 			<Routes>
 				<Route path="/" element={<HomePage />} />

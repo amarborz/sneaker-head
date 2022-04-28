@@ -7,6 +7,7 @@ import FooterEmail from './FooterEmail/FooterEmail'
 import FooterInfo from './FooterInfo/FooterInfo'
 import HomeCarousel from './HomeCarousel/HomeCarousel'
 import Loader from './Loader/Loader'
+import Logo from './Logo/Logo'
 import LuxurySneakers from './LuxurySneakers/LuxurySneakers'
 import Navbar from './Navbar/Navbar'
 import ProductPageImage from './ProductPageImage/ProductPageImage'
@@ -30,4 +31,5 @@ export {
 	ContactForm,
 	ContactInfo,
 	Loader,
+	Logo,
 }
