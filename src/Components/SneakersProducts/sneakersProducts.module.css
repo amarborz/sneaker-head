@@ -1,0 +1,21 @@
+.emptyResults {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.button {
+  transition: all 0.4s;
+  margin: auto;
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  background-color: white;
+  border: 1px solid black;
+  display: block;
+  border-radius: 0.5rem;
+}
+
+.button:hover {
+  transition: all 0.4s;
+  background-color: black;
+  color: white;
+}

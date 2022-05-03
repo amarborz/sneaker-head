@@ -3,6 +3,7 @@ import ContactIcons from '../ContactIcons/ContactIcons'
 import styles from './footer.module.css'
 import FooterTrending from '../FooterTrending/FooterTrending'
 import FooterNewReleases from '../FooterNewReleases/FooterNewReleases'
+import Logo from '../Logo/Logo'
 
 const Footer = () => {
 	const navigate = useNavigate()
@@ -13,7 +14,7 @@ const Footer = () => {
 
 	return (
 		<div className={styles.footerContainer}>
-			<h1>Sneaker Head</h1>
+			<Logo />
 
 			<div className={styles.footerItemsContainer}>
 				<FooterTrending onClick={clickHandler} />

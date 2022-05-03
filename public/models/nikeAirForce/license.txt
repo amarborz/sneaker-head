@@ -1,0 +1,11 @@
+Model Information:
+* title:	Air Force
+* source:	https://sketchfab.com/3d-models/air-force-348c77822bff4de3b6df59839b2fd201
+* author:	matousekfoto (https://sketchfab.com/matousekfoto)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Air Force" (https://sketchfab.com/3d-models/air-force-348c77822bff4de3b6df59839b2fd201) by matousekfoto (https://sketchfab.com/matousekfoto) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

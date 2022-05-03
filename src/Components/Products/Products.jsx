@@ -1,17 +1,18 @@
-import { useNavigate } from 'react-router-dom'
+// import { useNavigate } from 'react-router-dom'
+import ProductsCard from '../ProductsCard/ProductsCard'
 import styles from './products.module.css'
 
 const Products = ({ products, shoeBrand }) => {
 	let newProducts
-	const navigate = useNavigate()
+	// const navigate = useNavigate()
 
 	if (products) {
 		newProducts = Object.values(products)
 	}
 
-	const productPageHandler = (id) => {
-		navigate('/product/' + id)
-	}
+	// const productPageHandler = (id) => {
+	// 	navigate('/product/' + id)
+	// }
 
 	if (!products) {
 		return (
@@ -25,7 +26,9 @@ const Products = ({ products, shoeBrand }) => {
 	return (
 		<>
 			<h3 className={styles.productHeader}>{shoeBrand}</h3>
-			<div className={styles.productContainer}>
+
+			<ProductsCard products={newProducts} />
+			{/* <div className={styles.productContainer}>
 				{newProducts.map((product) => {
 					const { brand, id, name, price, image } = product
 
@@ -42,7 +45,7 @@ const Products = ({ products, shoeBrand }) => {
 						</div>
 					)
 				})}
-			</div>
+			</div> */}
 		</>
 	)
 }

@@ -1,11 +1,34 @@
 import { useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { addProduct } from '../../store/CartSlice'
 
 import styles from './productPageText.module.css'
 
 const sizes = [38, 39, 40, 41, 42, 43, 44, 45]
 
-const ProductPageText = ({ brand, name, desc, features, price, gender }) => {
+const ProductPageText = ({
+	brand,
+	name,
+	desc,
+	features,
+	price,
+	gender,
+	images,
+}) => {
 	const [shoeSize, setShoeSize] = useState()
+	const dispatch = useDispatch()
+
+	const addProductHandler = () => {
+		const image = images[0]
+		const id = name + shoeSize
+		if (shoeSize) {
+			dispatch(addProduct({ name, price, shoeSize, id, image }))
+		} else {
+			alert('Please choose a shoe size!')
+			return
+		}
+		alert('Successfully added to shopping cart!')
+	}
 
 	return (
 		<div className={styles.textContainer}>
@@ -38,7 +61,9 @@ const ProductPageText = ({ brand, name, desc, features, price, gender }) => {
 					))}
 				</ul>
 			</div>
-			<button className={styles.addButton}>ADD TO CART</button>
+			<button className={styles.addButton} onClick={() => addProductHandler()}>
+				ADD TO CART
+			</button>
 		</div>
 	)
 }

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Yeezy Boost 700 Waverunner
+* source:	https://sketchfab.com/3d-models/yeezy-boost-700-waverunner-256ca5ac8fa047c2b01fa4fc5ae01318
+* author:	Tykix (https://sketchfab.com/Tykix)
+
+Model License:
+* license type:	CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions must have the same license.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Yeezy Boost 700 Waverunner" (https://sketchfab.com/3d-models/yeezy-boost-700-waverunner-256ca5ac8fa047c2b01fa4fc5ae01318) by Tykix (https://sketchfab.com/Tykix) licensed under CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)

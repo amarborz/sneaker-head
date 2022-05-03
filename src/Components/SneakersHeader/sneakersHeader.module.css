@@ -1,0 +1,28 @@
+.container {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.header {
+  /* font-size: 3rem; */
+  font-weight: 900;
+  margin-bottom: 3rem;
+}
+
+.text {
+  display: inline-block;
+  width: 50vw;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+}
+
+.text span {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 992px) {
+  .text {
+    width: 80vw;
+    line-height: 2rem;
+  }
+}

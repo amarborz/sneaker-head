@@ -1,5 +1,8 @@
 import { useNavigate } from 'react-router-dom'
 
+import { useDispatch } from 'react-redux'
+import { toggleModal } from '../../store/CartSlice'
+
 import styles from './navbar.module.css'
 
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
@@ -7,8 +10,11 @@ import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
 import { brands } from '../../utils/data/brandInfo'
 import { carouselBrandInfo } from '../../utils/data/carouselBrandInfo'
 
+import { FaShoppingCart } from 'react-icons/fa'
+
 const NavbarComponent = () => {
 	const navigate = useNavigate()
+	const dispatch = useDispatch()
 
 	const navigateHandler = (endpoint) => {
 		navigate(endpoint)
@@ -34,7 +40,7 @@ const NavbarComponent = () => {
 									return (
 										<NavDropdown.Item
 											key={brand.id}
-											onClick={() => navigateHandler('/brands/' + brand.id)}
+											onClick={() => navigateHandler('brands/' + brand.id)}
 											href="#brands"
 										>
 											{brand.name}
@@ -48,7 +54,7 @@ const NavbarComponent = () => {
 									return (
 										<NavDropdown.Item
 											key={brand.id}
-											onClick={() => navigateHandler('/brands/' + brand.id)}
+											onClick={() => navigateHandler('brands/' + brand.id)}
 											href="#brands"
 										>
 											{brand.name}
@@ -58,13 +64,25 @@ const NavbarComponent = () => {
 							</div>
 						</div>
 					</NavDropdown>
+					<Nav.Link
+						href="#sneakers"
+						onClick={() => navigateHandler('sneakers')}
+					>
+						SNEAKERS
+					</Nav.Link>
 					<Nav.Link href="#accessories">ACCESSORIES</Nav.Link>
-					<Nav.Link href="#models">3D MODELS</Nav.Link>
-					<Nav.Link href="#about" onClick={() => navigateHandler('/about')}>
+					<Nav.Link href="#models" onClick={() => navigateHandler('model')}>
+						3D MODELS
+					</Nav.Link>
+					<Nav.Link href="#about" onClick={() => navigateHandler('about')}>
 						ABOUT
 					</Nav.Link>
 				</Nav>
 			</Navbar.Collapse>
+			<FaShoppingCart
+				className={styles.cartIcon}
+				onClick={() => dispatch(toggleModal())}
+			/>
 		</Navbar>
 	)
 }

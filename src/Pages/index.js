@@ -1,7 +1,17 @@
-import HomePage from './HomePage/HomePage'
-import BrandPage from './BrandPage/BrandPage'
-import ProductPage from './ProductPage/ProductPage'
-import ContactPage from './ContactPage/ContactPage'
-import AboutPage from './AboutPage/AboutPage'
+import HomePage from './homePage/HomePage'
+import BrandPage from './brandPage/BrandPage'
+import ProductPage from './productPage/ProductPage'
+import ContactPage from './contactPage/ContactPage'
+import AboutPage from './aboutPage/AboutPage'
+import ModelPage from './modelPage/ModelPage'
+import SneakersPage from './sneakersPage/SneakersPage'
 
-export { HomePage, BrandPage, ProductPage, ContactPage, AboutPage }
+export {
+	HomePage,
+	BrandPage,
+	ProductPage,
+	ContactPage,
+	AboutPage,
+	ModelPage,
+	SneakersPage,
+}

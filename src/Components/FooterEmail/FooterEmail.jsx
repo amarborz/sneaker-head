@@ -12,6 +12,8 @@ const FooterEmail = () => {
 			return
 		}
 
+		// Don't do this at home, bad practice!
+		emailInputRef.current.value = ''
 		alert('You subscribed to the weekly newsletter!')
 	}
 

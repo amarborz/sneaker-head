@@ -16,8 +16,6 @@ const useFetch = (urlEndpoint) => {
 		fetchProduct()
 	}, [urlEndpoint])
 
-	console.log(data)
-
 	return data
 }
 

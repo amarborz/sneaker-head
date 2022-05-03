@@ -1,4 +1,4 @@
-.productContainer {
+/* .productContainer {
   width: 80vw;
   margin: auto;
   margin-top: 2rem;
@@ -17,8 +17,8 @@
 .productCard:hover {
   transition: all 0.5s;
   transform: scale(1.1);
-}
-
+} */
+/* 
 .cardHeader {
   font-size: 0.8rem;
   font-weight: 600;
@@ -27,7 +27,7 @@
 .cardDesc {
   font-size: 0.8rem;
   color: grey;
-}
+} */
 
 .productHeader {
   text-align: center;
