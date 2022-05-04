@@ -1,6 +1,6 @@
 # Sneaker Head - Online Sneaker Shop.
 
-## Live site can be found at :
+## Live site can be found at : https://sneaker-head-umar.netlify.app
 
 ## Need to improve:
 
@@ -21,3 +21,5 @@
 #### 8. Too many CSS libraries. Using React-Bootstrap and Swiper to make the carousels and Navbar easier, but they also add some weight. should try to replace them.
 
 #### 9. Adaptivity could use some work. It works on mobile and tablet, but most of the adaptivity comes from flex-wrap and a few @media breakpoints. Could use some improvement.
+
+#### 10. Forgot to add an Error page.
