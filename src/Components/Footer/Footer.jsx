@@ -1,9 +1,11 @@
 import { useNavigate } from 'react-router-dom'
+
 import ContactIcons from '../ContactIcons/ContactIcons'
-import styles from './footer.module.css'
 import FooterTrending from '../FooterTrending/FooterTrending'
 import FooterNewReleases from '../FooterNewReleases/FooterNewReleases'
 import Logo from '../Logo/Logo'
+
+import styles from './footer.module.css'
 
 const Footer = () => {
 	const navigate = useNavigate()

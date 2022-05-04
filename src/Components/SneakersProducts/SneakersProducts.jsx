@@ -1,12 +1,9 @@
-// React Context
 import { useContext, useEffect, useState } from 'react'
 import SneakersContext from '../../store/SneakersFilterContext'
 
-// Components
 import ProductsCard from '../ProductsCard/ProductsCard'
 import SneakersFilter from '../SneakersFilter/SneakersFilter'
 
-// CSS
 import styles from './sneakersProducts.module.css'
 
 const SneakersProducts = () => {

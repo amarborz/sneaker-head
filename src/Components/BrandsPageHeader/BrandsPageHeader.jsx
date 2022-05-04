@@ -1,4 +1,3 @@
-// Styles
 import styles from './brandsPageHeader.module.css'
 
 const BrandsPageHeader = ({ name, slogan, image, desc }) => {

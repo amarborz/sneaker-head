@@ -1,6 +1,6 @@
 import { useRef } from 'react'
-
 import { useDispatch } from 'react-redux'
+
 import { cartSlice, resetCart } from '../../store/CartSlice'
 
 import styles from './cartCheckout.module.css'

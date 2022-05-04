@@ -1,12 +1,9 @@
-// React
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-// Styles
 import styles from './brands.module.css'
 import { FaArrowRight } from 'react-icons/fa'
 
-// Data
 import { brands } from '../../utils/data/brandInfo'
 import { logos } from '../../utils/data/logoInfo'
 

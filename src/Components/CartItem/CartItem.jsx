@@ -1,9 +1,11 @@
 import { useDispatch } from 'react-redux'
+
 import {
 	cartSlice,
 	increaseAmount,
 	decreaseAmount,
 } from '../../store/CartSlice'
+
 import styles from './cartItem.module.css'
 
 const CartItem = ({ name, price, shoeSize, amount, image }) => {

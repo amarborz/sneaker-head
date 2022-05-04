@@ -1,7 +1,8 @@
-import styles from './luxurySneakers.module.css'
-
 import { useNavigate } from 'react-router-dom'
+
 import { carouselBrandInfo } from '../../utils/data/carouselBrandInfo'
+
+import styles from './luxurySneakers.module.css'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 

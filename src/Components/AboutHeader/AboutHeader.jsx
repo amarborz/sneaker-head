@@ -1,9 +1,12 @@
-import styles from './sneakersHeader.module.css'
+import { useNavigate } from 'react-router-dom'
+import styles from './aboutHeader.module.css'
 
-const SneakersHeader = () => {
+const AboutHeader = () => {
+	const navigate = useNavigate()
+
 	return (
 		<div className={styles.container}>
-			<h1 className={styles.header}>All Sneakers</h1>
+			<h1 className={styles.header}>About Us</h1>
 			<p className={styles.text}>
 				At <span>Sneaker Head</span> you can find a wide selection of sneakers:
 				a product originally created for sports, sneakers have become a must in
@@ -13,8 +16,9 @@ const SneakersHeader = () => {
 				from more contemporary choices to vintage collections, special/unique
 				collaborations and new releases.
 			</p>
+			<button onClick={() => navigate('/contact')}>Contact Us</button>
 		</div>
 	)
 }
 
-export default SneakersHeader
+export default AboutHeader

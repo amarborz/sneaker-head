@@ -1,11 +1,8 @@
-// React Context
 import { useContext } from 'react'
 import SneakersContext from '../../store/SneakersFilterContext'
 
-// Data/info
 import { filterOptions } from '../../utils/data/filterOptions'
 
-// CSS
 import styles from './sneakersFilter.module.css'
 
 const SneakersFilter = () => {

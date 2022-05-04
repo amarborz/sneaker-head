@@ -1,9 +1,7 @@
-// React/Hooks
 import { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { useFetch, useTimeout } from '../../utils/hooks'
 
-// Components
 import { ProductPageImage, ProductPageText, Loader } from '../../components'
 
 import styles from './productPage.module.css'

@@ -1,7 +1,17 @@
-import React from 'react'
+import { useEffect } from 'react'
+
+import { AboutHeader } from '../../components'
 
 const AboutPage = () => {
-	return <div>AboutPage</div>
+	useEffect(() => {
+		window.scrollTo(0, 0)
+	}, [])
+
+	return (
+		<div>
+			<AboutHeader />
+		</div>
+	)
 }
 
 export default AboutPage

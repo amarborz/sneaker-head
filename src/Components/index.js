@@ -1,3 +1,4 @@
+import AboutHeader from './AboutHeader/AboutHeader'
 import Accessories from './Accessories/Accessories'
 import Brands from './Brands/Brands'
 import BrandsPageHeader from './BrandsPageHeader/BrandsPageHeader'
@@ -48,4 +49,5 @@ export {
 	SneakersProducts,
 	CartModal,
 	Accessories,
+	AboutHeader,
 }

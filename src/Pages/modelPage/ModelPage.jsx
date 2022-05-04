@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+
 import { ModelCanvas, ModelChoice } from '../../components'
 
 import { modelInfo } from '../../utils/data/modelInfo'

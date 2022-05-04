@@ -1,4 +1,5 @@
 import { useRef } from 'react'
+
 import styles from './footerEmail.module.css'
 
 const FooterEmail = () => {

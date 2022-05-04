@@ -1,6 +1,6 @@
-import styles from './productPageImage.module.css'
-
 import { Carousel, CarouselItem } from 'react-bootstrap'
+
+import styles from './productPageImage.module.css'
 
 const ProductPageImage = ({ images, name }) => {
 	return (
