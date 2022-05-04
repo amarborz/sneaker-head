@@ -5,33 +5,16 @@
   font-weight: 600;
 }
 
-.brandsContainer {
+
+/* .brandsContainer {
   width: 100%;
-  /* overflow: hidden; */
+  overflow: hidden;
   display: flex;
   justify-content: center;
   gap: 1rem;
   animation: move 20s infinite;
-}
+} */
 
 .brandItem {
   cursor: pointer;
-}
-
-@keyframes move {
-  0% {
-    transform: translateX(0%);
-  }
-
-  33% {
-    transform: translateX(-50%);
-  }
-
-  66% {
-    transform: translateX(50%);
-  }
-
-  100% {
-    transform: translateX(0%);
-  }
 }

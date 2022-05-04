@@ -20,12 +20,10 @@ export const cartSlice = createSlice({
 		loadCart: (state, action) => {
 			console.log('load', action.payload)
 			state.cartContent = [...action.payload]
-			console.log(state.cartContent)
 		},
 		loadPrice: (state, action) => {
 			console.log('price', action.payload)
 			state.totalPrice = action.payload
-			console.log(state.totalPrice)
 		},
 		addProduct: (state, action) => {
 			const existingItemIndex = state.cartContent.findIndex(

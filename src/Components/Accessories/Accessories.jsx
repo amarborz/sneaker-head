@@ -1,7 +1,7 @@
 import styles from './accessories.module.css'
 
 const Accessories = () => {
-	return <h3 className={styles.header}>Coming Soon!</h3>
+	return <h2 className={styles.header}>Coming soon!</h2>
 }
 
 export default Accessories
