@@ -5,6 +5,7 @@ import ContactPage from './contactPage/ContactPage'
 import AboutPage from './aboutPage/AboutPage'
 import ModelPage from './modelPage/ModelPage'
 import SneakersPage from './sneakersPage/SneakersPage'
+import AccessoriesPage from './accessoriesPage/AccessoriesPage'
 
 export {
 	HomePage,
@@ -14,4 +15,5 @@ export {
 	AboutPage,
 	ModelPage,
 	SneakersPage,
+	AccessoriesPage,
 }

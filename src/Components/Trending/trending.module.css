@@ -24,30 +24,41 @@
 }
 
 .subSectionContainer:hover {
-  transition: transform 0.3s 0.1s;
+  transition: transform 0.2s;
   transform: scale(0.9);
   cursor: pointer;
 }
 
 .subSectionHeader {
   position: absolute;
-  color: white;
+  font-family: 'Bungee', cursive;
   font-weight: 800;
 }
 
-
-
 .sectionImage {
   width: 100%;
-  transition: transform 0.3s 0.1s;
-  transition: filter 0.3s 0.1s;
-  transform: scale(1);
+  transition: all 0.4s;
   filter: brightness(100%);
 }
 
 .subSectionContainer:hover .sectionImage {
-  transition: transform 0.3s, top 1s;
+  transition: all 0.5s;
   transform: scale(1.1);
-  transition: filter 0.3s;
-  filter: brightness(80%);
+  filter: brightness(70%);
+}
+
+.subSectionContainer:hover .subSectionHeader {
+  transition: all 0.4s;
+  color: white;
+}
+
+@media screen and (max-width: 992px) {
+  .sectionContainer {
+    width: 70vw;
+    margin: auto;
+  }
+
+  .subSectionContainer {
+    width: 70vw;
+  }
 }

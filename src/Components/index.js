@@ -1,3 +1,4 @@
+import Accessories from './Accessories/Accessories'
 import Brands from './Brands/Brands'
 import BrandsPageHeader from './BrandsPageHeader/BrandsPageHeader'
 import CartModal from './CartModal/CartModal'
@@ -46,4 +47,5 @@ export {
 	SneakersFilter,
 	SneakersProducts,
 	CartModal,
+	Accessories,
 }

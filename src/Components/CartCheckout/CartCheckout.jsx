@@ -11,7 +11,6 @@ const CartCheckout = ({ setCheckout }) => {
 
 	const confirmHandler = () => {
 		const cardNumber = cardRef.current.value.replace(/\s/g, '')
-		console.log(typeof cardNumber)
 
 		if (cardNumber.length !== 16) {
 			alert('Please enter a valid card number!')

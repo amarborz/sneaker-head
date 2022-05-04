@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { ModelCanvas, ModelChoice } from '../../components'
 
 import { modelInfo } from '../../utils/data/modelInfo'
@@ -10,6 +10,10 @@ const ModelPage = () => {
 		const newModel = modelInfo.filter((model) => model.id === newModelName)
 		setCurrentModel(newModel[0])
 	}
+
+	useEffect(() => {
+		window.scrollTo(0, 0)
+	}, [])
 
 	return (
 		<div>

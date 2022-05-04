@@ -1,8 +1,16 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+
 import { useDispatch, useSelector } from 'react-redux'
-import { cartSlice, toggleModal } from '../../store/CartSlice'
+import {
+	cartSlice,
+	toggleModal,
+	loadCart,
+	loadPrice,
+} from '../../store/CartSlice'
+
 import CartCheckout from '../CartCheckout/CartCheckout'
 import CartItem from '../CartItem/CartItem'
+
 import styles from './cartModal.module.css'
 
 const CartModal = () => {
@@ -11,6 +19,22 @@ const CartModal = () => {
 	const cartContent = useSelector((state) => state.cart.cartContent)
 	const totalPrice = useSelector((state) => state.cart.totalPrice)
 	const dispatch = useDispatch(cartSlice)
+
+	useEffect(() => {
+		const prevCart = JSON.parse(localStorage.getItem('cart'))
+		const prevTotalPrice = parseInt(JSON.parse(localStorage.getItem('price')))
+		if (prevCart && prevCart.length !== 0) {
+			dispatch(loadCart(prevCart))
+			dispatch(loadPrice(prevTotalPrice))
+		}
+	}, [dispatch])
+
+	useEffect(() => {
+		setTimeout(() => {
+			localStorage.setItem('cart', JSON.stringify(cartContent))
+			localStorage.setItem('price', JSON.stringify(totalPrice))
+		}, 1000)
+	}, [cartContent, totalPrice])
 
 	return (
 		<>

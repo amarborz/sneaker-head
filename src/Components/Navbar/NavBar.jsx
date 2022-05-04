@@ -70,7 +70,12 @@ const NavbarComponent = () => {
 					>
 						SNEAKERS
 					</Nav.Link>
-					<Nav.Link href="#accessories">ACCESSORIES</Nav.Link>
+					<Nav.Link
+						href="#accessories"
+						onClick={() => navigateHandler('accessories')}
+					>
+						ACCESSORIES
+					</Nav.Link>
 					<Nav.Link href="#models" onClick={() => navigateHandler('model')}>
 						3D MODELS
 					</Nav.Link>
