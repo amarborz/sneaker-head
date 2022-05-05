@@ -7,7 +7,7 @@ import styles from './modelCanvas.module.css'
 
 const ModelLoader = () => {
 	const { progress } = useProgress()
-	return <Html center>{progress} % loaded</Html>
+	return <Html center>{parseInt(progress)} % loaded</Html>
 }
 
 const ModelCanvas = ({ model }) => {
