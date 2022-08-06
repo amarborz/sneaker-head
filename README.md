@@ -2,7 +2,7 @@
 
 ### Live site can be found at : https://sneaker-head-umar.netlify.app
 
-Screenshots:
+### Screenshots:
 ### 1.
 ![alt screenshot](https://github.com/amarborz/mockups/blob/main/sneakerHead/Screenshot%20(5).png)
 
